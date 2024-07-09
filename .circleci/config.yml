@@ -9,4 +9,5 @@ jobs:
           name: Say Hello
           command: |
            echo "Hello"
+           sleep 60
 
