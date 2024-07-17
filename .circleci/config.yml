@@ -5,6 +5,10 @@ jobs:
     machine: true
     steps:
       - checkout
+      - run: 
+          name: Retrive logs
+          command: journalctl -f --no-pager
+          background: true
       - run:
           name: Say Hello
           command: |
