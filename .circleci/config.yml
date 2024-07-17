@@ -6,5 +6,5 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello"
-      - run: hostname
+      - run: curl http://checkip.amazonaws.com
       - run: sleep 80
