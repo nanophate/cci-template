@@ -6,4 +6,5 @@ jobs:
     steps:
       - checkout
       - run: echo "Hello"
+      - run: hostname
       - run: sleep 80
