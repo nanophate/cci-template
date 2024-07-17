@@ -1,17 +1,9 @@
 version: 2.1
-
 jobs:
   build:
-    machine: true
+    docker:
+      - image: cimg/base:current
     steps:
       - checkout
-      - run: 
-          name: Retrive logs
-          command: journalctl -f --no-pager
-          background: true
-      - run:
-          name: Say Hello
-          command: |
-           echo "Hello"
-           sleep 60
-
+      - run: echo "Hello"
+      - run: sleep 60
