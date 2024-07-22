@@ -8,4 +8,4 @@ jobs:
       - run: echo "Hello"
       - run: curl http://checkip.amazonaws.com
       - run: sleep 80
-      - run: echo "Adding comit"
+      - run: echo "Adding comit 2021"
