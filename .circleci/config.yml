@@ -9,3 +9,4 @@ jobs:
       - run: curl http://checkip.amazonaws.com
       - run: sleep 80
       - run: echo "Adding comit 2021"
+      - run: echo "new pr?"
