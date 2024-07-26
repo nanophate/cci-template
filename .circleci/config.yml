@@ -8,4 +8,4 @@ jobs:
       - checkout
       - run: echo "Hello"
       - run: curl http://checkip.amazonaws.com
-      - run: sleep 6
+      - run: sleep 3
