@@ -3,8 +3,9 @@ jobs:
   build:
     docker:
       - image: cimg/base:current
+    resource_class: small
     steps:
       - checkout
       - run: echo "Hello"
       - run: curl http://checkip.amazonaws.com
-      - run: sleep 80
+      - run: sleep 10
