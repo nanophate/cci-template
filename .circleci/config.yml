@@ -1,10 +1,10 @@
 version: 2.1
 jobs:
   build:
-    machine: true
-    #docker:
-    #  - image: cimg/base:current
-    #resource_class: small
+    #machine: true
+    docker:
+      - image: cimg/base:current
+    resource_class: small
     steps:
       - checkout
       - run: echo "Hello"
